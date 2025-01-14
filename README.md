@@ -7,8 +7,7 @@
 Java
 
 ### 문제 출처
-[프로그래머스 알고리즘 고득점 kit](https://school.programmers.co.kr/learn/challenges?tab=algorithm_practice_kit)
-백준 온라인 저지
+[프로그래머스 알고리즘 고득점 kit](https://school.programmers.co.kr/learn/challenges?tab=algorithm_practice_kit) <br>백준 온라인 저지
 
 ### 진행방식
 매주 1~2문재씩 프로그래머스 문제를 풉니다. (Lv2 이하는 2문제씩)
