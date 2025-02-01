@@ -1,6 +1,5 @@
 package ljs;
 
-
 import java.util.ArrayList;
 
 public class PGS_Stack_1 {
@@ -19,8 +18,11 @@ public class PGS_Stack_1 {
             
         }
         answer = list.stream().mapToInt(Integer::intValue).toArray();        
-
-        System.out.println(answer);
+        
+        for(int i=0 ; i<answer.length; i++) {
+        	System.out.println(answer[i]);
+        }
+        
 	}
 
 }
