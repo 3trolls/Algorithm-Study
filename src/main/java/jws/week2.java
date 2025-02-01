@@ -16,6 +16,7 @@ public class week2 {
             }
         }
 
+
         //ArrayList를 배열로 변환
         return list.stream().mapToInt(i -> i).toArray();
     }
