@@ -1,11 +1,14 @@
 package yhs;
 
-import java.util.Arrays;
 import java.util.Stack;
 
 public class Week2 {
     public static void main(String[] args) {
-        int[] arr = {1, 1, 3, 3, 0, 1, 1};
+        solution(new int[]{1, 1, 3, 0, 1});
+        solution(new int[]{4, 4, 4, 3, 3});
+    }
+
+    public static int[] solution(int[] arr) {
         Stack<Integer> stack = new Stack();
 
         for (int i = 0; i < arr.length; i++) {
@@ -18,6 +21,6 @@ public class Week2 {
                 .mapToInt(i -> i)
                 .toArray();
 
-        System.out.print(Arrays.toString(answer));
+        return answer;
     }
 }
