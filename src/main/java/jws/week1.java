@@ -2,7 +2,7 @@ package jws;
 
 import java.util.Arrays;
 
-public class 포켓몬 {
+public class week1 {
 
     public int solution(int[] nums) {
         //ex) nums[] = [3,3,3,2,2,4] -> answer=3
