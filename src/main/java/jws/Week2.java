@@ -2,7 +2,7 @@ package jws;
 
 import java.util.Stack;
 
-public class week2 {
+public class Week2 {
     public int[] solution(int []arr) {
         //ex) [1,1,3,3,0,1,1] -> [1,3,0,1]
         //ex) [4,4,4,3,3] -> [4,3]
