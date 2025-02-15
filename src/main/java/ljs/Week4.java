@@ -10,6 +10,7 @@ public class Week4 {
 		int[][] commands = new int[][] {{2, 5, 3}, {4, 4, 1}, {1, 7, 3}};
 		System.out.println(solution(array, commands)); 
 	}
+	
 	public static int[] solution(int[] array, int[][] commands) {
         int[] answer = new int[commands.length];
         ArrayList<Integer> arr = new ArrayList<>();
