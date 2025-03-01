@@ -1,4 +1,5 @@
 package ljs;
+import java.util.*;
 
 public class Week6 {
 
@@ -9,6 +10,42 @@ public class Week6 {
 		int[] reserve= new int[] {1, 2};
 		System.out.println(solution(n, lost, reserve));
 
+	}
+	
+	public static int solution2(int n, int[] lost, int[] reserve) {
+		int answer = 0;
+        int lost_idx = 0, reverse_idx = 0;
+        int[] temp = new int[n];
+        Arrays.sort(lost);
+        Arrays.sort(reserve);
+        
+        
+        
+        for(int i=0; i<lost.length; i++){
+            for(int j=0; j<reserve.length; j++){
+                if(lost[i] == reserve[j]){
+                    lost[i] = -1;
+                    reserve[j] = -1;
+                    answer++;
+                    break;
+                }
+            }
+        }
+        
+        for(int i=0; i<lost.length; i++){
+            int lo = lost[i];            
+            if(lo != -1){
+                for(int j=reverse_idx; j<reserve.length; j++){
+                    if(reserve[j] != -1 && (reserve[j] - 1 == lo || reserve[j] + 1 == lo)){
+                        answer++;
+                        reverse_idx = j + 1;
+                        break;
+                    }
+                }
+            }
+        }
+        answer +=  n - lost.length;
+        return answer;      
 	}
 	
 	public static int solution(int n, int[] lost, int[] reserve) {
